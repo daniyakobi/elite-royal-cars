@@ -1,0 +1,152 @@
+.footer
+    background-color: $black
+    color: $white
+    .container
+        width: 90%
+        height: 100%
+        padding-top: 103px
+        padding-bottom: 110px
+    &__title
+        font-weight: bold
+        font-size: 28px
+        line-height: 34px
+    &__container
+        width: 100%
+        height: 100%
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        margin-top: 60px
+        position: relative
+    &__services
+        max-width: 1222px
+        display: flex
+        align-items: flex-start
+        flex-wrap: wrap
+        padding-bottom: 79px+46px
+        &-item
+            width: 338px
+            margin-right: 104px
+            &:nth-child(3)
+                margin-right: 0
+            &:nth-child(1), &:nth-child(2), &:nth-child(3)
+                margin-bottom: 65px
+        &-title
+            font-weight: bold
+            font-size: 18px
+            line-height: 22px
+            margin-bottom: 35px
+        &-list
+            padding: 0
+            margin: 0
+            padding-left: 13px
+            list-style-image: url(../img/icons/list-style.svg)
+        &-link
+            margin-bottom: 21px
+            &:last-child
+                margin-bottom: 0
+            a
+                font-weight: 300
+                font-size: 14px
+                line-height: 17px
+                color: $white
+                opacity: 0.6
+                transition: 0.5s all
+                &:hover
+                    opacity: 1
+                    font-weight: bold
+    &__contacts
+        width: 315px
+        height: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        &-bank, &-contact, &-social, &-sell, &-description, &-copyright
+            display: flex
+            flex-direction: column
+            width: 100%
+        &-bank
+            margin-bottom: 51px
+            align-items: flex-start
+        &-contact
+            margin-bottom: 37px
+            align-items: flex-start
+        &-social
+            margin-bottom: 60px
+            flex-direction: row
+            justify-content: center
+            align-items: center
+        &-link
+            margin-right: 11px
+            &:last-child
+                margin-right: 0
+        &-sell
+            margin-bottom: 42px
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            a
+                margin-right: 25px
+                &:last-child
+                    margin-right: 0
+        &-description
+            margin-bottom: 64px
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            img
+                margin-right: 30px
+                &:last-child
+                    margin-right: 0
+        &-copyright
+            justify-content: center
+            align-items: center
+            font-size: 12px
+            line-height: 15px
+            opacity: 0.6
+        &-title
+            font-weight: bold
+            font-size: 18px
+            line-height: 22px
+            margin-bottom: 33px
+        &-text
+            font-weight: 300
+            font-size: 14px
+            line-height: 17px
+            opacity: 0.6
+            &:last-child
+                margin-top: 20px
+        &-group
+            display: flex
+            align-items: center
+            margin-bottom: 13px
+            &:last-child
+                margin-bottom: 0
+            img
+                margin-right: 7px
+            a
+                font-size: 15px
+                line-height: 18px
+                opacity: 0.6
+                color: $white
+                transition: 0.5s all
+                &:hover
+                    opacity: 1
+                    font-weight: bold 
+    &__up
+        position: absolute
+        left: 0
+        bottom: 0
+        button
+            width: 46px
+            height: 46px
+            border: 1px solid $white
+            border-radius: 50%
+            background-color: transparent
+            margin-right: 11px
+        a
+            font-size: 13px
+            line-height: 16px
+            color: $white
+            opacity: 0.6

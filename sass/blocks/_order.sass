@@ -1,0 +1,75 @@
+.order
+    display: flex
+    align-items: center
+    flex-direction: column
+    padding-bottom: 100px
+    &__title
+        margin-bottom: 30px
+    &__text
+        margin-bottom: 80px
+    &__container
+        width: 100%
+        height: 845px
+        background-image: url(../img/order-bg.png)
+        background-position: center center
+        background-repeat: no-repeat
+        background-size: cover
+        position: relative
+    &__wrapper
+        width: 1020px
+        height: 546px
+        background: rgba(0, 0, 0, 0.6)
+        border-radius: 30px
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        z-index: 99
+        padding: 80px 79px 80px 73px
+    &__form
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__name, &__phone
+        width: 100%
+        height: 50px
+        margin-bottom: 30px
+        padding-left: 75px
+        padding-right: 75px
+    &__input
+        &-group
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-bottom: 30px
+    &__from, &__to, &__date, &__passengers
+        width: 49%
+        height: 50px
+        padding-left: 75px
+        padding-right: 75px
+        &::placeholder
+            text-align: center
+    &__button
+        margin-top: 10px
+        width: 100%
+        height: 50px
+        border-radius: 10px
+        border: 1px solid $main-color
+        background-color: transparent
+        display: flex
+        align-items: center
+        justify-content: center
+        color: $main-color
+        transition: 0.5s all
+        span
+            font-weight: bold
+            font-size: 16px
+            line-height: 20px
+        &:hover
+            background-color: $main-color
+            color: $black
+        &:active
+            background-color: $active-button-1

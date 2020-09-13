@@ -6,3 +6,83 @@
     align-items: center
     &__title
         margin-bottom: 30px
+    &__text
+        margin-bottom: 80px
+    &__slider
+        width: 100%
+        background-color: $slider-bg-color
+        padding: 50px 0
+        display: flex
+        flex-direction: column
+        align-items: center
+        &-wrapper
+            width: 900px
+            position: relative
+        &-container
+            width: 580px
+            height: 275px
+            border-radius: 30px
+        &-slide
+            width: 580px
+            height: 100%
+            background: $white
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1)
+            border-radius: 30px
+            position: relative
+            padding: 28px 54px 25px 62px
+            display: flex
+            align-items: flex-start
+            flex-direction: column
+        &-user
+            display: flex
+            align-items: flex-start
+            margin-bottom: 31px
+        &-avatar
+            width: 75px
+            height: 75px
+            border-radius: 50%
+            object-fit: cover
+            margin-right: 27px
+        &-content
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+        &-description
+            font-size: 12px
+            line-height: 15px
+            margin-bottom: 6px
+        &-name
+            font-weight: bold
+            font-size: 15px
+            line-height: 18px
+            margin-bottom: 24px
+        &-text
+            width: 361px
+            font-size: 15px
+            line-height: 20px
+            overflow: hidden
+        &-date
+            font-size: 12px
+            line-height: 16px
+            opacity: 0.8
+        &-button
+            position: absolute
+            min-width: 40px
+            height: 8px
+            top: 50%
+            transform: translateY(-50%)
+            z-index: 99
+            border: none
+            cursor: pointer
+            background-repeat: no-repeat
+            background-position: center
+            background-color: transparent
+            outline: none
+        &-prev
+            left: 0
+            z-index: 99
+            background-image: url(../img/icons/arrow-prev.svg)
+        &-next
+            right: 0
+            z-index: 99
+            background-image: url(../img/icons/arrow-next.svg)
